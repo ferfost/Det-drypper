@@ -1,0 +1,19 @@
+{
+  "name": "DripBot Plus",
+  "version": "1.2",
+  "manifest_version": 2,
+  "permissions": [
+	"http://dripstat.com/",
+    "https://dripstat.com/"
+  ],
+   "content_scripts": [
+    {
+      "matches": ["https://dripstat.com/game/*"],
+      "js": ["contentscript.js"]
+    }
+  ],
+ "icons": { "16": "drip_16.png",
+            "48": "drip_48.png",
+           "128": "drip_128.png" },
+  "web_accessible_resources": ["dripBot.js"]
+}
